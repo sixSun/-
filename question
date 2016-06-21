@@ -1,0 +1,7 @@
+var addTwoNumbers = function(l1, l2) {
+     return '['+String(Number(l1.reverse().join(""))+Number(l2.reverse().join(""))).split("").reverse()+']';
+    
+};
+var l1=[5,6,4];
+var l2=[2,4,3];
+alert(addTwoNumbers(l1,l2));
