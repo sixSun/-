@@ -1,0 +1,9 @@
+var reverse = function(x) {
+    if (x >= 0 && x <= 2^32-1) {
+        return Number(x.toString().split("").reverse().join(""))
+    } else if (x >= -2^32 && x < 0){
+        var y =  - x;
+        var num = Number(y.toString().split("").reverse().join(""));
+        return -num;
+    } else { return 0 };
+};
